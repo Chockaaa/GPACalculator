@@ -1,0 +1,18 @@
+Title 
+
+GPA Calculator SG
+
+Short description
+
+GPA Calculator SG allows students enrolled in Singapore University to calculate their GPA
+
+Full description
+
+GPA Calculator has a simple user interface which allows users to key in their respective module grade and module credits to generate their GPA score. The GPA score computes up to 5.0 grade point used by Singapore Univerisities.
+
+Features
+- Calculate Current Semester GPA
+- Calculate Cumulative Semester GPA
+- Calculate Credits accumulated from the Module
+
+

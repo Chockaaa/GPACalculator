@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="360dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="CUMULATIVE GPA:"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/cgpa"
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:padding="8sp"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Accumulated Credits:"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+
+            <EditText
+                android:id="@+id/pastcredit"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="8sp"
+                android:textSize="10sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="344dp"
+        android:layout_height="57dp"
+        android:background="#666666"
+        android:gravity="center"
+        android:text="CURRENT SEMESTER RESULTS"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="351dp"
+        android:layout_height="504dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Module No."
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="MODULE CREDITS"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="MODULE GRADE"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#666666"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 1"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M0"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="false"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/GPA_M0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:isScrollContainer="false" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 2"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#666666"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 3"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 4"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#666666"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 5"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 6"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#666666"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#666666"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 7"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#212121"
+                android:gravity="center"
+                android:paddingLeft="10sp"
+                android:paddingTop="12sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="12sp"
+                android:text="Module 8"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/AU_M7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <Spinner
+                android:id="@+id/GPA_M7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate gpa"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/gpacallogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

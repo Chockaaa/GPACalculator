@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GPA Calculator SG</string>
+
+    <string-array name="creditsspin">
+        <item>Empty</item>
+        <item>1 Unit</item>
+        <item>2 Units</item>
+        <item>3 Units</item>
+        <item>4 Units</item>
+        <item>5 Units</item>
+    </string-array>
+
+    <string-array name="gradespin">
+        <item>Empty</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+</resources>

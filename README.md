@@ -1,6 +1,6 @@
 # GPACalculator
 My first attempt at developing an Android App to help Singapore University students to calculate their GPA score
-
+Playstore Link: https://play.google.com/store/apps/details?id=app.chocka&hl=en_SG&gl=US
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/29830837/128148102-0ea40f4e-7919-4e31-bbbc-3a543c5a8671.jpeg" width="30%" height="30%">
